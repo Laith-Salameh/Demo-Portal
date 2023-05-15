@@ -1,0 +1,42 @@
+@import "../../wwwroot/scss/colors";
+@import "../../wwwroot/scss/sizes";
+@import "../../wwwroot/scss/mixins.scss";
+
+.input-field{
+    max-width: 354px;
+    min-width: 120px;
+    width: 80%;
+    border-radius: 10px;
+    @include center;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 12px 14px;
+    gap: 8px;
+    background-color: $secondary-color-200;
+    border: 1px solid $secondary-color-200; 
+    position: relative;
+    &:hover{
+        border-color: $comp-color ;
+    }
+    .icon{
+        height: 16px;
+        width: 16px;
+    }
+    .text-input{
+        background-color: $secondary-color-200;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: $primary-color;
+        width: 80% ;
+    }
+    span{
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, 110%);
+        color: red;
+        font-weight: 500;
+        font-size: 12px;
+        width: 80%;
+    }
+}

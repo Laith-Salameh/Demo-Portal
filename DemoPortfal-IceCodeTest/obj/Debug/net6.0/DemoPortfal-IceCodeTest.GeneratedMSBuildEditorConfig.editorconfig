@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DemoPortfal_IceCodeTest
+build_property.RootNamespace = DemoPortfal_IceCodeTest
+build_property.ProjectDir = C:\Users\Laith\source\repos\DemoPortfal-IceCodeTest\DemoPortfal-IceCodeTest\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Laith\source\repos\DemoPortfal-IceCodeTest\DemoPortfal-IceCodeTest
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/Payment.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Componants/AreaChart.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmFudHNcQXJlYUNoYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Layouts/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcRW1wdHlMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/DashBoard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaEJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-06fyqyx3ne
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-91fsm513qk
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/Messages.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzc2FnZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6qhr3hb8jm
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Componants/BreadCrumb.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmFudHNcQnJlYWRDcnVtYi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ssdab7autc
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Componants/Card.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmFudHNcQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dkl4p5djes
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Componants/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmFudHNcSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-3eoxntre83
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Componants/MessageCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmFudHNcTWVzc2FnZUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ypqw1lnydx
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Componants/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmFudHNcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mlirk8na69
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dHNcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9ynjmx8uup
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/UI/Input.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVJXElucHV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-vfudkytnwi
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Shared/UI/SearchInput.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVJXFNlYXJjaElucHV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-am5p1b7mro
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Laith/source/repos/DemoPortfal-IceCodeTest/DemoPortfal-IceCodeTest/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

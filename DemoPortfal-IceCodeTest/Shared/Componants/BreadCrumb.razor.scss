@@ -1,0 +1,24 @@
+@import "../../wwwroot/scss/colors";
+@import "../../wwwroot/scss/sizes";
+@import "../../wwwroot/scss/mixins.scss";
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    .title{
+        font-weight: 400;
+        font-size: 18px;
+        color: $text-color-darker;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .icon{
+        width: 10px;
+        height: 18px;
+    }
+}

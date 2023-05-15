@@ -1,0 +1,32 @@
+@page "/inbox/Dashboard"
+@using DemoPortfal_IceCodeTest.Data;
+
+<PageTitle>Inbox Dashboard</PageTitle>
+
+<h2 class="title">Dashboard</h2>
+<BreadCrumb items="@_items"/>
+
+<div class="wrapper">
+    @foreach (var card in Cards)
+    {
+        <Card card="@card" />
+    }
+</div>
+
+
+
+@code{
+    private List<IBreadCrumb> _items = new List<IBreadCrumb>(){
+        new IBreadCrumb(){ Title = "Inbox" , Url = ""},
+        new IBreadCrumb(){ Title = "Dashboard" , Url = "/inbox/dashboard"},
+    };
+
+    private List<ICard> Cards = new List<ICard>(){
+        new ICard(){ Color= CardType.Secondary, Icon= "MailOpen", LastUpdated= new DateTime(), Period= "Today", Number=4000  },
+        new ICard(){ Color= CardType.Secondary, Icon= "MailOpen", LastUpdated= new DateTime(), Period= "This Month", Number=1500  },
+        new ICard(){ Color= CardType.Secondary, Icon= "MailOpen", LastUpdated= new DateTime(), Period= "Total", Number=4000  },
+        new ICard(){ Color= CardType.Primary, Icon= "coins", LastUpdated= new DateTime(), Period= "Today", Number=4000  },
+        new ICard(){ Color= CardType.Primary, Icon= "coins", LastUpdated= new DateTime(), Period= "This Month", Number=1500  },
+        new ICard(){ Color= CardType.Primary, Icon= "coins", LastUpdated= new DateTime(), Period= "Total", Number=4000  },
+    };
+}

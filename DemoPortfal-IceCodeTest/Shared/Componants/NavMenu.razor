@@ -1,0 +1,66 @@
+﻿@inject NavigationManager NavigationManager;
+
+<h1 class="title">@Title()</h1>
+<ul class="main-list">
+    <li class="@GetActive("", NavLinkMatch.All)" >
+        <a href="/">
+            <img class="icon" src="icons/Home.svg"> @( isOpen ? "Home" : "")
+        </a>
+    </li>
+    <li class="@GetActive("inbox", NavLinkMatch.Prefix) @(isOpenInbox && isOpen? "opened"  : "") ">
+        <a @onclick="ToggleInbox">
+            <img class="icon" src="icons/Archive.svg"> 
+            @if(isOpen){
+                <span>Inbox</span>
+                <img class="collapse-icon" src="@CollapseIcon()" >
+            } 
+        </a>
+        <ul class="sub-list">
+            <li>
+                <NavLink href="/inbox/Dashboard" ActiveClass="selected-link">
+                    <span>Dashboard</span>
+                </NavLink>
+            </li>
+            <li>
+                <NavLink href="/inbox/Messages" ActiveClass="selected-link">
+                    <span>Messages</span>
+                </NavLink>
+            </li>
+        </ul>
+    </li>
+    <li class="@GetActive("payment", NavLinkMatch.All)">
+        <a href="/payment">
+            <img class="icon" src="icons/Wallet.svg"> @( isOpen ? "Payment" : "")
+        </a>
+    </li>
+</ul>
+
+
+@code {
+    [Parameter]
+    public Boolean isOpen {get; set;} = false;
+    [Parameter]
+    public EventCallback OpenNavBar {get; set;} 
+    [CascadingParameter]
+    protected Boolean isMobile {get; set;}
+    public string Title () => isOpen ? "Demo Portal" : "DP";
+
+    protected override void OnInitialized() => NavigationManager.LocationChanged += (s, e) => StateHasChanged();
+
+    bool IsActive(string href, NavLinkMatch navLinkMatch = NavLinkMatch.Prefix)
+    {
+        var relativePath = NavigationManager.ToBaseRelativePath(NavigationManager.Uri).ToLower();
+        return navLinkMatch == NavLinkMatch.All ? relativePath == href.ToLower() : relativePath.StartsWith(href.ToLower());
+    }
+
+    string GetActive(string href, NavLinkMatch navLinkMatch = NavLinkMatch.Prefix) => IsActive(href, navLinkMatch) ? "selected" : "";
+
+    public Boolean isOpenInbox {get; set;} = false;
+    public void ToggleInbox(){
+        OpenNavBar.InvokeAsync();
+        isOpenInbox = !isOpenInbox;
+    }
+    private string CollapseIcon ()=> isOpenInbox ? "icons/ArrowDown.svg" : "icons/ArrowUp.svg";
+}
+
+

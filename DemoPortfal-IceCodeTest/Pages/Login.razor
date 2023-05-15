@@ -1,0 +1,45 @@
+@layout EmptyLayout
+@page "/login"
+@inject NavigationManager Navigation;
+@using DemoPortfal_IceCodeTest.Data;
+@inject LoginService loginService;
+
+
+<PageTitle>Login</PageTitle>
+
+<div class="wrapper">
+    <div class="image"> <img src="images/LoginImage.png" /></div>
+    <div class="login-forum">
+        <div class="title">
+            <h1>Demo Portal</h1>
+            <span>Login</span>
+        </div>
+        <Input @ref="EmailInput" placeholder="Email" Icon="Mail" ErrorMessage="Email is admin@gmail.com" testValidity="@loginService.isEmail" type="email" />
+        <Input @ref="PasswordInput" placeholder="Password" Icon="Lock" ErrorMessage="Password is 12345" testValidity="@loginService.isPassword" type="password" />
+        <label class="checkbox-container">
+            <input type="checkbox" />
+            <span>Remember Me</span>
+        </label>
+        <div class="call-to-action">
+            <div tabindex="3" class="button" @onclick="NavigateToCounterComponent" role="button">Login</div>
+            <span>Forgot Password?</span>
+        </div>
+
+     </div>
+
+</div>
+
+@code{
+    private Input? EmailInput; 
+    private Input? PasswordInput; 
+
+    private void NavigateToCounterComponent()
+    {
+        EmailInput?.ValueChanged();
+        PasswordInput?.ValueChanged();
+        if( loginService.checkCredentials( EmailInput?.Value ?? "", PasswordInput?.Value ?? "") ){
+            Navigation.NavigateTo("/");
+        }
+
+    }
+}

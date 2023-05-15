@@ -1,0 +1,33 @@
+
+<div class="input-field">
+    <img class="icon" src="@getSrc()">
+    <input @bind="Value" @onblur="ValueChanged" @oninput="ValueChanged" placeholder="@placeholder" class="text-input" type="@Type"/>
+    @if(!isValid){
+        <span>@ErrorMessage</span>
+    }
+</div>
+
+
+@code{
+    [Parameter]
+    public string Icon {get; set;} = "";
+    private string getSrc () => $"icons/{Icon ?? "Lock"}.svg";
+    [Parameter]
+    public string Type {get; set;} = "";
+
+    [Parameter]
+    public string placeholder {get; set;} = "";
+    [Parameter]
+    public string ErrorMessage {get; set;} = "";
+    [Parameter]
+    public Func<string,Boolean> testValidity {get; set;} = (str) => true;
+    public string Value = "";
+    private Boolean isValid = true;
+
+    public void ValueChanged(){
+        isValid = testValidity(Value);
+    }
+
+
+
+}

@@ -1,0 +1,93 @@
+@import "../../wwwroot/scss/colors";
+@import "../../wwwroot/scss/sizes";
+@import "../../wwwroot/scss/mixins.scss";
+
+$sideBar-width-close: 90px;
+$sideBar-width-open: 260px;
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.sideBar {
+    background-color: $primary-color;
+    width: $sideBar-width-close;
+    transition: width 0.5s ease;
+    padding-top: 32px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    overflow: hidden;
+    .close{
+        display: none;
+    }
+}
+
+main {
+    width: calc(100% - #{$sideBar-width-close});
+    transition: width 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+}
+
+.body{
+    padding: 27px;
+}
+
+.open{
+    .sideBar{
+        width: $sideBar-width-open;
+    }
+    main{
+        width: calc(100% - #{$sideBar-width-open});
+    }
+}
+
+
+.modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223, 224, 235, 0.8);
+    @include center;
+    z-index: 1;
+    overflow: hidden;
+    .close{
+        position: absolute;
+        top: 10px;
+        left: calc( #{$sideBar-width-open} - 10px);
+        width: 20px;
+        height: 20px;
+        display: block;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .sideBar{
+        display: unset !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: enter 1s ease forwards;
+        z-index: 2;
+        height: 100%;
+    }
+}
+@keyframes enter {
+    0% { left: -90%}
+    100% { left: 0}
+
+}
+@media screen and (max-width: $tablet-width) {
+    .sideBar{
+        display: none;
+    }
+    .open main , main{
+        width: 100%;
+    }
+}
+

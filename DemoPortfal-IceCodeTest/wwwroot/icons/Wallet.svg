@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="5.8208332mm"
+   height="4.3656249mm"
+   viewBox="0 0 5.8208332 4.3656249"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   inkscape:export-filename="Wallet.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" /><defs
+     id="defs2" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-176.32933,-130.26592)"><g
+       style="fill:none"
+       id="g2377"
+       transform="matrix(0.26458333,0,0,0.26458333,176.32933,130.04449)"><rect
+         x="1"
+         y="1.83691"
+         width="20"
+         height="14.5"
+         rx="2"
+         stroke="#ffffff"
+         stroke-width="2"
+         id="rect2365" /><rect
+         x="13.833"
+         y="7.3369098"
+         width="7.1666698"
+         height="3.5"
+         rx="1.75"
+         stroke="#ffffff"
+         stroke-width="2"
+         id="rect2367" /></g></g></svg>

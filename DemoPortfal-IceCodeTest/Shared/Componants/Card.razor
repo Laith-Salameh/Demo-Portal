@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-icon-@(card.Color == CardType.Primary ? "primary" : "secondary")">
+        <img src="icons/@(card.Icon).svg" class="icon" >
+    </div>
+    <div class="card-info">
+        <span class="card-text">@card.Period</span>
+        <span class="card-number">@card.Number</span>
+    </div>
+    <span class="card-time">last updated: @card.LastUpdated.ToUniversalTime()</span>
+</div>
+
+
+@code{
+    [Parameter]
+    public ICard card { get; set; } = new ICard();
+}

@@ -1,0 +1,153 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DemoPortfal-IceCodeTest.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DemoPortfal-IceCodeTest.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\fonts\\Poppins-Variable.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins-Variable.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\fonts\\Satoshi-Variable.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Satoshi-Variable.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Archive.svg",
+      "PackagePath": "staticwebassets\\icons\\Archive.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\ArrowDown.svg",
+      "PackagePath": "staticwebassets\\icons\\ArrowDown.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\ArrowUp.svg",
+      "PackagePath": "staticwebassets\\icons\\ArrowUp.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Bell.svg",
+      "PackagePath": "staticwebassets\\icons\\Bell.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Close.svg",
+      "PackagePath": "staticwebassets\\icons\\Close.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Home.svg",
+      "PackagePath": "staticwebassets\\icons\\Home.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Lock.svg",
+      "PackagePath": "staticwebassets\\icons\\Lock.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Mail.svg",
+      "PackagePath": "staticwebassets\\icons\\Mail.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\MailOpen.svg",
+      "PackagePath": "staticwebassets\\icons\\MailOpen.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Menu.svg",
+      "PackagePath": "staticwebassets\\icons\\Menu.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\RightArrow.svg",
+      "PackagePath": "staticwebassets\\icons\\RightArrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Search.svg",
+      "PackagePath": "staticwebassets\\icons\\Search.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Settings.svg",
+      "PackagePath": "staticwebassets\\icons\\Settings.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\Wallet.svg",
+      "PackagePath": "staticwebassets\\icons\\Wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\avatar.png",
+      "PackagePath": "staticwebassets\\icons\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\icons\\coins.svg",
+      "PackagePath": "staticwebassets\\icons\\coins.svg"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\images\\LoginImage.png",
+      "PackagePath": "staticwebassets\\images\\LoginImage.png"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\js\\datatable.js",
+      "PackagePath": "staticwebassets\\js\\datatable.js"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\js\\listener.js",
+      "PackagePath": "staticwebassets\\js\\listener.js"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\_colors.scss",
+      "PackagePath": "staticwebassets\\scss\\_colors.scss"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\_fonts.scss",
+      "PackagePath": "staticwebassets\\scss\\_fonts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\_sizes.scss",
+      "PackagePath": "staticwebassets\\scss\\_sizes.scss"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\mixins",
+      "PackagePath": "staticwebassets\\scss"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\mixins.css",
+      "PackagePath": "staticwebassets\\scss\\mixins.css"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\mixins.scss",
+      "PackagePath": "staticwebassets\\scss\\mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\site.css",
+      "PackagePath": "staticwebassets\\scss\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Laith\\source\\repos\\DemoPortfal-IceCodeTest\\DemoPortfal-IceCodeTest\\wwwroot\\scss\\site.scss",
+      "PackagePath": "staticwebassets\\scss\\site.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DemoPortfal-IceCodeTest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.DemoPortfal-IceCodeTest.props",
+      "PackagePath": "build\\DemoPortfal-IceCodeTest.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DemoPortfal-IceCodeTest.props",
+      "PackagePath": "buildMultiTargeting\\DemoPortfal-IceCodeTest.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.DemoPortfal-IceCodeTest.props",
+      "PackagePath": "buildTransitive\\DemoPortfal-IceCodeTest.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

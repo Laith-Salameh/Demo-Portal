@@ -1,0 +1,102 @@
+﻿@inherits LayoutComponentBase
+@using DemoPortfal_IceCodeTest.Data;
+@inject LoginService loginService;
+@inject NavigationManager Navigation;
+@inject BrowserService Browser;
+@inject IJSRuntime JS
+
+
+<PageTitle>DemoPortfal-IceCodeTest</PageTitle>
+
+<div class="@className()">
+    <CascadingValue Value="@tableCollapse">
+        <CascadingValue Value="@isMobile">
+            <CascadingValue Value="@isTablet">
+                @if(isTablet && isOpen){
+                    <div class="modal">
+                        <div class="sideBar">
+                            <img src="icons/Close.svg" class="close" @onclick="Toggle">
+                            <NavMenu isOpen="@isOpen"/>
+                        </div>
+                    </div>
+                }
+                <div class="sideBar">
+                    <NavMenu isOpen="@isOpen" OpenNavBar="@OpenNavBar" />
+                </div>
+                <main>
+                    <Header Toggle="@Toggle" />
+                    <article class="body">
+                        @Body
+                    </article>
+                </main>
+            </CascadingValue>
+        </CascadingValue>
+    </CascadingValue>
+</div>
+
+
+@code{
+    protected static Boolean isMobile = false;
+    protected static Boolean isTablet = false;
+    protected static Boolean tableCollapse = false;
+
+
+    protected void UpdatedBrowserWidth(object? _, int width) {
+        if (!isMobile && width <= 600) {
+            isMobile = true;
+            base.StateHasChanged();
+        } else if (isMobile && width > 600) {
+            isMobile = false;
+            base.StateHasChanged();
+        }
+        if (!isTablet && width <= 1024) {
+            isTablet = true;
+            base.StateHasChanged();
+        } else if (isTablet && width > 1024) {
+            isTablet = false;
+            base.StateHasChanged();
+        }
+         if (!tableCollapse && width <= 840) {
+            tableCollapse = true;
+            base.StateHasChanged();
+        } else if (tableCollapse && width > 840) {
+            tableCollapse = false;
+            base.StateHasChanged();
+        }
+    }
+    protected override void OnInitialized()
+    {
+        Browser.Init(JS);
+        Browser.Resize += UpdatedBrowserWidth;
+        if(!loginService.LoggedIn)
+            Navigation.NavigateTo("login");
+
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if( firstRender){
+            int width = (await Browser.GetDimensions()).Width;
+            isMobile = width > 600 ? false : true;
+            isTablet = width > 1024 ? false : true;
+            tableCollapse = width > 840 ? false : true;
+
+
+            base.StateHasChanged();
+        }
+        
+        
+    }
+    
+    private Boolean isOpen = false;
+    private string className () => isOpen ? "page open": "page";
+
+    public void Toggle(){
+        isOpen = !isOpen;
+    }
+    public void OpenNavBar(){
+        isOpen = true;
+    }
+    public void CloseNavBar(){
+        isOpen = false;
+    }
+}

@@ -1,0 +1,21 @@
+@using DemoPortfal_IceCodeTest.Data;
+
+<div class="wrapper">
+    @{ IBreadCrumb last = items.Last();}
+    @foreach (IBreadCrumb item in items)
+    {   
+        <a href="@item.Url"><span class="title">@item.Title</span></a>
+        if( item != last){
+            <img class="icon" src="icons/RightArrow.svg"> 
+        }
+    }
+</div>
+
+
+
+@code{
+    [Parameter]
+    public List<IBreadCrumb> items {get; set;} = new List<IBreadCrumb>();
+
+
+}

@@ -1,0 +1,15 @@
+
+<div class="input-field">
+    <input @bind="Value" placeholder="@placeholder" class="text-input"/>
+    <span><img class="icon" src="@getSrc()"></span>
+</div>
+
+
+@code{
+    [Parameter]
+    public string Icon {get; set;} = "";
+    private string getSrc () => $"icons/{Icon ?? "Lock"}.svg";
+    [Parameter]
+    public string placeholder {get; set;} = "";
+    public string Value = "";
+}

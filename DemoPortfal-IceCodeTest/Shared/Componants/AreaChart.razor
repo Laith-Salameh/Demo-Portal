@@ -1,0 +1,24 @@
+@using DemoPortfal_IceCodeTest.Data
+@inject MessagesService MessagesService
+
+
+<ApexChart TItem="Message"
+        Title="Scatter Sample">
+
+    <ApexPointSeries TItem="Message"
+                Items="messages"
+                SeriesType="@SeriesType.Area"
+                Name="Gross Value"
+                XValue="@(e=> e.ID)"
+                YAggregate="@(e => e.Sum( e=> e.Number))"
+                OrderByDescending="e=>e.Y" />
+</ApexChart>
+
+@code {
+    private List<Message> messages = new List<Message>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        messages = await MessagesService.GetMessagesAsync( 1021,DateTime.Now);
+    }
+}

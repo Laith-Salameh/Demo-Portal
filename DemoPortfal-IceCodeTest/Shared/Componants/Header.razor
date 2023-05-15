@@ -1,0 +1,37 @@
+<div class="header">
+        @if(isTablet){
+        <div class="left-content">
+            <img class="icon" src="icons/Menu.svg" @onclick="Toggle" />
+            <h1 class="title">Demo Portal</h1>
+        </div>
+        <div class="right-content">
+            <img class="icon" src="icons/Settings.svg" />
+            <img class="icon" src="icons/Bell.svg" />
+            <img class="avatar" src="icons/avatar.png"/>
+        </div>
+        }else{
+        <div class="left-content">
+            <img class="icon" src="icons/Menu.svg" @onclick="Toggle" />
+            <SearchInput Icon="Search" placeholder="Search" />
+        </div>
+        <div class="right-content">
+            <img class="icon" src="icons/Settings.svg" />
+            <img class="icon" src="icons/Bell.svg" />
+            <div class="user">
+                <div class="user-data">
+                    <span class="text">Omar Masoud</span>
+                    <span class="subtext">admin</span>
+                </div>
+                <img class="avatar" src="icons/avatar.png"/>
+            </div>
+        </div>
+        }
+    
+</div>
+
+@code{
+    [CascadingParameter]
+    public Boolean isTablet {get; set;}
+    [Parameter]
+    public EventCallback Toggle {get; set;} 
+}

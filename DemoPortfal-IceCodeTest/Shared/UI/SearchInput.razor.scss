@@ -1,0 +1,38 @@
+@import "../../wwwroot/scss/colors";
+@import "../../wwwroot/scss/sizes";
+@import "../../wwwroot/scss/mixins.scss";
+
+$icon-size: 35px;
+.input-field{
+    width: 250px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background: $secondary-color-100;
+    border-radius: 4px;
+    overflow: hidden;
+    span{
+        background-color: $primary-color;
+        height: 100%;
+        width: $icon-size;
+        float: right;
+        @include center;
+        .icon{
+            height: 16px;
+            width: 16px;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    .text-input{
+        float: left;
+        background: $secondary-color-100;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: $primary-color;
+        width: calc(100% - #{$icon-size})  ;
+    }
+}

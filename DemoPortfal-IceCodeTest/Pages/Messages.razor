@@ -1,0 +1,81 @@
+@page "/inbox/Messages"
+@implements IDisposable
+@inject IJSRuntime JS
+@inject MessagesService MessagesService
+
+
+<h2 class="title">Messages</h2>
+<BreadCrumb items="@_items"/>
+
+@if(tableCollapse){
+    <div class="MessageCards">
+        @foreach (var message in messages)
+        {
+            <MessageCard message="@message" />
+        }
+    </div>
+}
+else{
+    <div class="datatable">
+    <table class="table" id="dt1">
+        <thead >
+            <tr>
+                <th>ID</th>
+                <th>Number</th>
+                <th>Status</th>
+                <th>Content</th>
+                <th>Response</th>
+                <th>CreatedAt</th>
+                <th>Response At</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var message in messages)
+            {
+                <tr>
+                    <td data-cell="ID">@message.ID</td>
+                    <td data-cell="Number">@message.Number</td>
+                    <td data-cell="Status"><div class="@(message.Status == Status.Success ? "succ" : "err" )"></div> @message.Status</td>
+                    <td data-cell="Content">@message.Content</td>
+                    <td data-cell="Response">@message.Response</td>
+                    <td data-cell="Created At">@message.CreatedAt.ToUniversalTime()</td>
+                    <td data-cell="Response At">@message.ResponseAt.ToUniversalTime()</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
+
+
+
+@code {
+    [CascadingParameter]
+    public Boolean tableCollapse {get; set;}
+    private List<IBreadCrumb> _items = new List<IBreadCrumb>(){
+        new IBreadCrumb(){ Title = "Inbox" , Url = ""},
+        new IBreadCrumb(){ Title = "Dashboard" , Url = "/inbox/dashboard"},
+    };
+    private List<Message> messages = new List<Message>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        messages = await MessagesService.GetMessagesAsync( 1021,DateTime.Now);
+    }    
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        if(messages is not null)
+        {
+            await JS.InvokeVoidAsync("DataTables1.destroyDataTable");
+            await JS.InvokeVoidAsync("DataTables1.buildDataTable");
+        }        
+    }
+
+    async void IDisposable.Dispose()
+    {        
+        await JS.InvokeVoidAsync("DataTables1.destroyDataTable");
+    }
+}

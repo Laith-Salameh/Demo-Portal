@@ -1,0 +1,30 @@
+<div class="MessageCard">
+    <div class="left-card">
+        <ul class="data-cell">
+            <li>ID</li>
+            <li>Number</li>
+            <li>Status</li>
+            <li>Content</li>
+            <li>Response</li>
+            <li>Created At</li>
+            <li>Response At</li>
+        </ul>
+    </div>
+    <div class="right-card">
+        <ul class="data-cell">
+            <li> @message.ID</li>
+            <li>@message.Number</li>
+            <li><div class="@(message.Status == Status.Success ? "succ" : "err" )"></div> @message.Status</li>
+            <li>@message.Content</li>
+            <li>@message.Response</li>
+            <li>@message.CreatedAt.ToUniversalTime()</li>
+            <li>@message.ResponseAt.ToUniversalTime()</li>
+        </ul>
+    </div>
+</div>
+
+
+@code{
+    [Parameter]
+    public Message message {get; set;} = new Message();
+}
